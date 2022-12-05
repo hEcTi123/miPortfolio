@@ -94,6 +94,19 @@ header a:hover {
 
 /*HABILIDADES*/
 
+.cajalenguajes {
+  background-color: lightgray;
+  padding: 30px 20px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cajalenguajes:hover {
+  background-color: rgb(192, 191, 191);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 #habilidades {
   background-color: rgb(245, 245, 245);
 }
@@ -114,27 +127,28 @@ header a:hover {
   text-align: center;
 }
 
-.descrip {
-  color: rgb(53, 52, 52);
-}
-
-.cosa {
-  color: rgb(53, 52, 52);
-}
-
 .descripcion-habilidades {
   color: rgb(53, 52, 52);
   margin-top: 0px;
-  margin-bottom: 50px;
-}
-
-p .habilidad {
-  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .cosita {
-  text-align: center;
-  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.cosa {
+  margin: 0;
+  padding-top: 20px;
+  color: rgb(53, 52, 52);
+  border-top: 1px solid black;
+}
+
+.ayuda {
+  margin: 0;
+  padding: 0;
+  width: 30px;
 }
 
 /*EXPERIENCIA*/
@@ -150,10 +164,23 @@ p .habilidad {
 
 #experiencia .introexp {
   text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.introexp h2 {
+  margin-bottom: 0;
+}
+
+.descrip {
+  color: rgb(53, 52, 52);
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 25;
 }
 
 #experiencia .container {
-  padding: 100px 12px;
+  padding: 30px 10px;
 }
 
 .imagencita {
@@ -234,7 +261,26 @@ p .habilidad {
     flex-direction: row;
     text-align: center;
   }
-  .trabajo {
+  /*.trabajo {
     margin: 20px;
+    width: 400px;
+    height: 600px;
+  }*/
+
+  .trabajo {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 10px 20px;
+  }
+
+  .imagencita {
+    padding: 0;
+    margin: 0;
+    max-width: 400px;
+    max-height: 300px;
+  }
+
+  .cajalenguajes {
+    max-width: 200px;
   }
 }
